@@ -107,11 +107,11 @@ public class Scrabble {
 			}
 			// Checks if the input is accepted and returns the appropriate answer if not
 			if (!(MyString.subsetOf(input, hand))) {
-				System.out.println("Invalid word. Try again.\n");
+				System.out.println("Invalid word. Try again.");
 				continue;
 			}
 			if (!(isWordInDictionary(input))) {
-				System.out.println("No such word in the dictionary. Try again.\n");
+				System.out.println("No such word in the dictionary. Try again.");
 				continue;
 			}
 			// The word is real and valid, proceeds to score
