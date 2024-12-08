@@ -107,17 +107,17 @@ public class Scrabble {
 			}
 			// Checks if the input is accepted and returns the appropriate answer if not
 			if (!(MyString.subsetOf(input, hand))) {
-				System.out.println("Invalid word. Try again.");
+				System.out.println("Invalid word. Try again.\n");
 				continue;
 			}
 			if (!(isWordInDictionary(input))) {
-				System.out.println("No such word in the dictionary. Try again.");
+				System.out.println("No such word in the dictionary. Try again.\n");
 				continue;
 			}
 			// The word is real and valid, proceeds to score
 			int addScore = wordScore(input);
 			score += addScore;
-			System.out.println(input + " earned " + addScore + " points. Score: " + score + " points");
+			System.out.println(input + " earned " + addScore + " points. Score: " + score + " points\n");
 			// Removes letters used from hand
 			hand = MyString.remove(hand, input);
 
@@ -151,7 +151,7 @@ public class Scrabble {
 			if (input.equals("n")) {
 				playHand(createHand());
 			} else {
-				System.out.println("Invalid input. Try again.");
+				System.out.println("Invalid input. Try again.\n");
 			}
 		}
 	}
